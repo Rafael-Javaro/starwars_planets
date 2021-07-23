@@ -19,7 +19,7 @@ export default function HandleActiveFilters() {
     <div>
       {filterByNumericValues.map((filterType) => {
         const { column, comparison, value } = filterType;
-        if (!column) return '';
+        if (!column) return null;
         return (
           <div key={ column } data-testid="filter">
             <span>{`${column} | ${comparison} | ${value}`}</span>

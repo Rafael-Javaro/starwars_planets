@@ -4,7 +4,7 @@ import PlanetsContext from '../context/PlanetsContext';
 export default function Table() {
   const { planets } = useContext(PlanetsContext);
   return (
-    <table>
+    <table border="solid">
       <thread>
         <tr>
           <th>Name</th>
